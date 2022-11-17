@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Masonry</title>
+  <style>
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  }
+  body{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .container{
+  display: flex;
+  gap:1rem;
+  }
+  .items{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  gap:1rem;
+  }
+  .left{
+  align-items: flex-end;
+  }
+  .right {
+  align-items: flex-start;
+  }
+  .one{
+  height: 90px;
+  width: 90px;
+  background: crimson;
+  }
+  .two{
+  height: 120px;
+  width: 120px;
+  background: dodgerblue;
+  }
+  .three{
+  height: 150px;
+  width: 150px;
+  background: purple;
+  }
+  .four{
+  height: 90px;
+  width: 90px;
+  background: limegreen;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="items left">
+    <div class="item one"></div>
+    <div class="item two"></div>
+    </div>
+
+    <div class="items right">
+      
+    <div class="item three"></div>
+    <div class="item four"></div>
+    </div>
+  </div>
+</body>
+</html>
